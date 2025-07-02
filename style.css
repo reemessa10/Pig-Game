@@ -86,6 +86,10 @@ main{
     text-transform: uppercase;
     box-shadow: 0 1rem 2rem rgba(24, 23, 23, 0.789);
 }
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
 .btn-new{ 
     top: 0.2rem;
 }
