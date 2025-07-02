@@ -12,13 +12,10 @@ const score1 = document.querySelector("#score-1");
 const current0 = document.querySelector("#current-0"); 
 const current1 = document.querySelector("#current-1"); 
 
-//Starting condition
-diceEl.classList.add('hidden'); 
-
 //declaring varibles 
 let playing , currentScore , activePlayer , totalScore; 
 
-// initialization Function 
+//Starting condition
 const init = function(){
     //1. reset total scores 
     totalScore = [0, 0];
@@ -35,8 +32,13 @@ const init = function(){
 
     //4.reset active player 
     activePlayer = 0;
-    document.querySelector(`.player-${activePlayer}`).classList.remove('player-winner');
-    document.querySelector(`.player-${activePlayer}`).classList.add('player-active'); 
+    player0.classList.remove('player-winner');
+    player1.classList.remove('player-winner');
+    player0.classList.add("player-active");
+    player1.classList.remove("player-active");
+ 
+    //5. reset dice
+    diceEl.classList.add('hidden'); 
 }
 init();
 
