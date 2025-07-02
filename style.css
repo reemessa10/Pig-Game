@@ -22,7 +22,6 @@ main{
     display: flex;    
     justify-content: space-between;   
     align-items: stretch;
-    gap: 20px;
     text-align: center;
     position: relative;
 }
